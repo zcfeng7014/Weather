@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    tools:context="com.zcfeng.weather.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/city"/>
+        <TextView
+            android:id="@+id/weatherinfo"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempture"
+            android:textSize="60sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/aqi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/wet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/wind"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerwiew"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+        <GridView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:numColumns="4"
+            android:layout_margin="5dp"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:id="@+id/gridview">
+
+        </GridView>
+
+    </LinearLayout>
+
+</ScrollView>
